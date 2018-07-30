@@ -10,8 +10,6 @@ import java.util.TimeZone;
 
 /**
  * 日期utils
- *
- * @author liyingjie
  */
 public class DateUtils {
     public static final String FORMAT_YYYY_MM_DD = "yyyy-MM-dd";

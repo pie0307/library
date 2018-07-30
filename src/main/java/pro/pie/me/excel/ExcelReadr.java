@@ -17,8 +17,6 @@ import java.util.Map;
 
 /**
  * xls工具类
- *
- * @author chengys4
  */
 public class ExcelReadr {
 
