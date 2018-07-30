@@ -6,7 +6,6 @@
 - http-client       htt请求封装
 - logger            加密解密模块
 - security          加密解密模块
-- techplatform      存储平台操作
 - validator         校验工具类
 
 ## 使用

@@ -16,6 +16,8 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <poi.version>3.11</poi.version>
         <poi-ooxml.version>3.11</poi-ooxml.version>
+        <httpclient.version>4.2.1</httpclient.version>
+        <fastjson.version>1.2.31</fastjson.version>
     </properties>
 
     <dependencies>
@@ -71,6 +73,17 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>${poi-ooxml.version}</version>
+        </dependency>
+        <!-- httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
     </dependencies>
 </project>
