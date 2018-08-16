@@ -258,9 +258,6 @@ public class HttpClientUtils {
      *
      * @param url        - 请求URL
      * @param postParams - 查询参数,如果要保证参数顺序请使用LinkedHashMap
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostForm(String url, Map<String, String> postParams) {
         return httpPostForm(url, postParams, DEFAULT_REQUEST_TIMEOUT, DEFAULT_ENCODING);
@@ -276,9 +273,6 @@ public class HttpClientUtils {
      * @param url            - 请求URL
      * @param postParams     - 查询参数,如果要保证参数顺序请使用LinkedHashMap
      * @param requestTimeout - 请求超时时间,毫秒数
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostForm(String url, Map<String, String> postParams, int requestTimeout) {
         return httpPostForm(url, null, postParams, requestTimeout, DEFAULT_ENCODING);
@@ -290,10 +284,6 @@ public class HttpClientUtils {
      * @param url            - 请求URL
      * @param postParams     - 查询参数,如果要保证参数顺序请使用LinkedHashMap
      * @param requestTimeout - 请求超时时间,毫秒数
-     * @param encoding
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostForm(String url, Map<String, String> postParams, int requestTimeout, String encoding) {
 
@@ -307,7 +297,6 @@ public class HttpClientUtils {
      * @param url            - 请求URL
      * @param postParams     - 查询参数,如果要保证参数顺序请使用LinkedHashMap
      * @param requestTimeout - 请求超时时间,毫秒数
-     * @param encoding
      */
     public final String httpPostForm(String url, HeaderVO headerVO, Map<String, String> postParams, int requestTimeout, String encoding) {
         Preconditions.checkArgument(!Strings.isNullOrEmpty(url), "Param url must be not null and empty");
@@ -384,9 +373,6 @@ public class HttpClientUtils {
      *
      * @param url        - 请求URL
      * @param jsonParams - json参数
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostJson(String url, String jsonParams) {
         return httpPostJson(url, jsonParams, DEFAULT_REQUEST_TIMEOUT, DEFAULT_ENCODING);
@@ -398,9 +384,6 @@ public class HttpClientUtils {
      * @param url            - 请求URL
      * @param jsonParams     - json参数
      * @param requestTimeout - 请求超时时间,毫秒数
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostJson(String url, String jsonParams, int requestTimeout) {
         return httpPostJson(url, jsonParams, requestTimeout, DEFAULT_ENCODING, null);
@@ -412,10 +395,6 @@ public class HttpClientUtils {
      * @param url            - 请求URL
      * @param jsonParams     - 查询参数,如果要保证参数顺序请使用LinkedHashMap
      * @param requestTimeout - 请求超时时间,毫秒数
-     * @param encoding
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostJson(String url, String jsonParams, int requestTimeout, String encoding) {
         return httpPostJson(url, jsonParams, requestTimeout, DEFAULT_ENCODING, null);
@@ -428,10 +407,6 @@ public class HttpClientUtils {
      * @param url            - 请求URL
      * @param jsonParams     - 查询参数,如果要保证参数顺序请使用LinkedHashMap
      * @param requestTimeout - 请求超时时间,毫秒数
-     * @param encoding
-     * @return
-     * @throws IllegalArgumentException
-     * @throws HttpClientException
      */
     public final String httpPostJson(String url, String jsonParams, int requestTimeout, String encoding, HeaderVO headerVO) {
         Preconditions.checkArgument(!Strings.isNullOrEmpty(url), "Param url must be not null and empty");

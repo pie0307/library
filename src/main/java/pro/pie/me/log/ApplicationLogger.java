@@ -25,9 +25,6 @@ public class ApplicationLogger {
 
     /**
      * 记录系统错误日志
-     *
-     * @param errorMsg
-     * @param throwable
      */
     public static void error(String errorMsg, Throwable throwable) {
 
