@@ -1,12 +1,10 @@
 ## Java基础工具类
 - basic             基础的VO、异常、注解、常量、工具类
-- corm              通用orm
 - datatimes         日期工具类
-- execel            表格操作
+- excel            表格操作
 - http-client       htt请求封装
 - logger            加密解密模块
 - security          加密解密模块
-- validator         校验工具类
 
 ## 使用
 ### Maven
